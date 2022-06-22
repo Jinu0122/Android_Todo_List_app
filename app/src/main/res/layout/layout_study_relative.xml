@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제이누우"
+        android:textSize="30sp" />
+<!--        레이아웃 길이는 dp 텍스트 사이즈는 sp 사용-->
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tv_name"
+        android:layout_below="@+id/tv_name"
+        android:text="27"
+        android:textSize="29sp"/>
+    <!--    layout_alignRight 오른쪽 끝선에 맞춰라-->
+    <!--    layout_below 지정한 id의 아래에 붙여라-->
+    <!--    layout_above 지정한 id의 웨에 붙여라-->
+    <TextView
+        android:id="@+id/tv_cm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="180"
+        android:textSize="29sp"/>
+    <!--    layout_toRightOf 뷰 우측에다가 배치해라-->
+    <!--    layout_centerInParent 레이아웃의 가운데다 맞춰라-->
+    <!--    layout_alignParentRight 레이아웃 부모의 오른쪽에 맞춰라-->
+</RelativeLayout>
