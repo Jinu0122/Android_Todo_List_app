@@ -2,14 +2,23 @@ package com.jnu.todolistapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.jnu.todolistapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding : ActivityMainBinding
+            // lateinit : 늦은 초기화
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.tvName.setText("안녕하세요 박진우 입니다. ")
+        binding.tvTest.setText("강의 완강 까지 파이팅. ")
+
+        // findViewById 이전엔 이걸로 사용했지만 반복적인 코드작성을 줄이기위해 binding 이라는 게 탄생했다.
 
         // 엑티비티가 생성될 댸 호출되며 사용자 인터페이스 초기화 할 때 이곳에 구현.
-
         println("Jnu onCreate !!!")
 
     }
