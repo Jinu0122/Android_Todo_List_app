@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.jnu.todolistapp.adapter.TodoAdapter
 import com.jnu.todolistapp.databinding.ActivityListMainBinding
 import com.jnu.todolistapp.databinding.ActivityMainBinding
+import timber.log.Timber
 
 class ListMainActivity : AppCompatActivity() {
 

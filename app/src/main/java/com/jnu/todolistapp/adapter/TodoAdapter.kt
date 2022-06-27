@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.jnu.todolistapp.databinding.ListItemTodoBinding
 import com.jnu.todolistapp.model.TodoInfo
+import timber.log.Timber
 
 class TodoAdapter : RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
 
@@ -50,6 +51,8 @@ class TodoAdapter : RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodoAdapter.TodoViewHolder {
         val binding = ListItemTodoBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return TodoViewHolder(binding)
+
+
 
     }
 
